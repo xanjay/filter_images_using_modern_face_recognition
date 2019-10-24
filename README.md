@@ -15,7 +15,7 @@ this project focuses on image filtering, there are many more use-cases of face r
 and apply to your own application. 
 ## Training on your own dataset
 1. Organize the training directory with sub-directory for each person as follows:   
-Note: Sub-directory should be named after person name which will be used for inference later.  
+Note: Sub-directory should be named after person name which will be used for inference later. Maintain equal number of portrait images to each sub-directory. Minimum number of images is 5. Use more images to get better results.  
 ```
 training_images
 +-- elon
@@ -31,7 +31,7 @@ training_images
 |   +-- image2.jpg
 |   ...
 ```
-Maintain equal number of portrait images to each sub-directory. Minimum number of images is 5. Use more images to get better results.  
+
 2. Run `train.py` script as follows by passing the directory and algortihm to use.
 ```sh 
 train.py -d training_images -a knn
@@ -51,6 +51,6 @@ face_recognizer.py -d images_dir -p elon
 Since it is not feasible to copy images to output directory when source directory size is very large. So, output directory contains only shortcuts to images and a text file containing image file path.
 ## References
 facenet paper: https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf
-Openface:https://cmusatyalab.github.io/openface/
+Openface:https://cmusatyalab.github.io/openface/  
 MTCNN:https://github.com/ipazc/mtcnn  
 face-alignment: https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/
