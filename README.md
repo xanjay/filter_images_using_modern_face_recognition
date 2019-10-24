@@ -1,20 +1,11 @@
 # Filter Images Using Modern Face Recognition
-Train deep learning based face recognition system with only 5-10 images and accurately filter out images of specific person from directory of images.  
-Implemented using OpenCV and Tensorflow.  
-With the rise of deep learning, there are many state-of-the art deep learning models which can be used for face detection and recognition.
-But they need to be trained on thouands of training samples. Instead, this project attempts to build face recognition system with near accuray 
-as state-of-the-art models while training on much less data.
-How Does it Work? Wiki
+Train deep learning based face recognition system with only 5-10 images and accurately filter out images of specific person from directory of images.
+> Implemented using OpenCV and Tensorflow.
 
-Face Detection Using MTCNN
-Face Alignment
-Face Embedding using Openface
-Train KNN
-Inference
-
+With the rise of deep learning, there are many state-of-the art deep learning models which can be used for face detection and recognition. But they need to be trained on thouands of training samples. Instead, this project attempts to build face recognition system with near accuray as state-of-the-art models while training on much less data.
 # Installation
 **Dependencies**: Python3, OpenCV, Tensorflow, Scikit-Learn, DLib  
-Install the requirements with PIP and get started. (Better use virtualenv)
+Install the requirements with PIP and get started. (Better use [virtualenv](https://virtualenv.pypa.io/en/latest/))
 ```sh
 pip install -r requirements.txt
 ```
@@ -52,13 +43,13 @@ only if the number of images per person is greater than 10.
 ```sh
 test_face_recognition.py -i test_image.jpg
 ```
-- To filter images of desired person, run the following script by passing source directory and person:
+- To filter images of desired person, run the following script by passing source directory and person. It filters the images containing `elon` from images_dir to output directory.
 ```sh
 face_recognizer.py -d images_dir -p elon
 ```
-It filters the images containing `elon` to output directory.  
+   
 Since it is not feasible to copy images to output directory when source directory size is very large. So, output directory contains only shortcuts to images and a text file containing image file path.
-#References
+## References
 facenet paper: https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf
 Openface:https://cmusatyalab.github.io/openface/
 MTCNN:https://github.com/ipazc/mtcnn  

@@ -1,0 +1,2 @@
+E:\Sanjay\ML Projects\filter_images_using_face_recognition\images_dir\960x0.jpg
+E:\Sanjay\ML Projects\filter_images_using_face_recognition\images_dir\S088758643.jpg
