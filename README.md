@@ -2,7 +2,8 @@
 Train deep learning based face recognition system with only 5-10 images and accurately filter out images of specific person from directory of images.
 > Implemented using OpenCV and Tensorflow.
 
-With the rise of deep learning, there are many state-of-the art deep learning models which can be used for face detection and recognition. But they need to be trained on thousands of training samples. Instead, this project attempts to build face recognition system with near accurcay as state-of-the-art models while training on much less data. How does it work? See [wiki](https://github.com/xanjay/filter_images_using_modern_face_recognition/wiki#how-does-it-work). 
+With the rise of deep learning, there are many state-of-the art deep learning models which can be used for face detection and recognition. But they need to be trained on thousands of training samples. Instead, this project attempts to build face recognition system with near accurcay as state-of-the-art models while training on much less data.  
+How does it work? See [wiki](https://github.com/xanjay/filter_images_using_modern_face_recognition/wiki#how-does-it-work). 
 # Installation
 **Dependencies**: Python3, OpenCV, Tensorflow, Scikit-Learn, DLib  
 Install the requirements with PIP and get started. (Better use [virtualenv](https://virtualenv.pypa.io/en/latest/))
